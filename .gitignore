@@ -1,0 +1,17 @@
+# Backend
+catering-backend/venv/
+catering-backend/.env
+catering-backend/db.sqlite3
+catering-backend/media/
+
+# Frontend
+frontend/node_modules/
+frontend/.env
+frontend/dist/
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,101 @@
+.services-page {
+  max-width: 1300px;
+  margin: auto;
+  padding: 100px 40px;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.services-header h1 {
+  font-size: 3rem;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.services-header p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Services Grid */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Explore Button */
+
+.explore-events {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.explore-events button {
+  background: #d4af37;
+  color: white;
+
+  border: none;
+
+  padding: 15px 35px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+
+  transition: 0.3s;
+}
+
+.explore-events button:hover {
+  background: #b8932e;
+  transform: translateY(-2px);
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .services-page {
+    padding: 80px 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-header h1 {
+    font-size: 2rem;
+  }
+
+  .services-header p {
+    font-size: 0.95rem;
+  }
+
+  .explore-events button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

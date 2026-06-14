@@ -1,0 +1,22 @@
+.services-page {
+  padding-top: var(--navbar-height);
+  min-height: 100vh;
+  background-color: var(--off-white);
+}
+
+.services-header {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.services-bottom-cta {
+  text-align: center;
+  padding: 40px 0 80px;
+}

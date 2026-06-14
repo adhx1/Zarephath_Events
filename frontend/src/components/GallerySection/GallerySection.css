@@ -1,0 +1,40 @@
+.gallery-page {
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding: 80px 40px;
+}
+
+.gallery-header {
+  text-align: center;
+
+  margin-bottom: 80px;
+}
+
+.gallery-header h1 {
+  font-size: 3rem;
+
+  margin-bottom: 20px;
+
+  color: #d4af37;
+}
+
+.gallery-header p {
+  max-width: 700px;
+
+  margin: auto;
+
+  color: #666;
+
+  line-height: 1.8;
+}
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 30px;
+}

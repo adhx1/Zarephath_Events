@@ -1,0 +1,182 @@
+.contact-section {
+  max-width: 1300px;
+  margin: auto;
+  padding: 100px 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.contact-content {
+  flex: 1;
+}
+
+.contact-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.contact-content p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Contact Info */
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-info p {
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.contact-info strong {
+  color: #111;
+}
+
+/* WhatsApp Button */
+
+.whatsapp-contact-btn {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding: 12px 24px;
+
+  background: #25D366;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  transition: 0.3s;
+}
+
+.whatsapp-contact-btn:hover {
+  background: #1da851;
+}
+
+/* Social Links */
+
+.social-links {
+  display: flex;
+  gap: 15px;
+
+  margin-top: 25px;
+
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+
+  color: #d4af37;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #b8932e;
+}
+
+/* Form */
+
+.contact-form {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  background: white;
+
+  padding: 30px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  padding: 15px;
+
+  border: 1px solid #ddd;
+
+  outline: none;
+
+  font-size: 1rem;
+
+  background: white;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background: #d4af37;
+
+  color: white;
+
+  border: none;
+
+  padding: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #b8932e;
+}
+
+.contact-form button:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+}
+
+/* Success Message */
+
+.success-msg {
+  color: green;
+
+  font-weight: 600;
+
+  margin-top: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .contact-section {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 80px 20px;
+  }
+
+  .contact-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}

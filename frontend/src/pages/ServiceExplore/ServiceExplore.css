@@ -1,0 +1,15 @@
+.service-explore-page {
+  padding-top: calc(var(--navbar-height) + 60px);
+  min-height: 100vh;
+  background-color: var(--white);
+  padding-bottom: 100px;
+}
+
+.service-explore-hero {
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+.service-explore-list {
+  padding-top: 40px;
+}

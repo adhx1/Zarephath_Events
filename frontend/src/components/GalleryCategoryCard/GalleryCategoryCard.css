@@ -1,0 +1,64 @@
+.gallery-category-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 4/3;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.gallery-category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.gallery-category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gallery-category-card:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-smooth);
+}
+
+.gallery-category-card:hover .gallery-category-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(212, 175, 55, 0.4) 100% /* Subtle gold tint on hover */
+  );
+}
+
+.gallery-category-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--white);
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: transform var(--transition-smooth);
+}
+
+.gallery-category-card:hover .gallery-category-title {
+  transform: translateY(-8px) scale(1.05);
+}

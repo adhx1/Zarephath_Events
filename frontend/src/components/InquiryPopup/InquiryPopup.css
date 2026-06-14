@@ -1,0 +1,130 @@
+.inquiry-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.inquiry-popup {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  box-shadow: var(--shadow-xl);
+}
+
+.inquiry-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: var(--gray-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--gray-dark);
+  transition: all var(--transition-fast);
+}
+
+.inquiry-close:hover {
+  background: var(--gray);
+  color: var(--black);
+}
+
+.inquiry-popup h3 {
+  font-family: var(--font-heading);
+  color: var(--gold);
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.inquiry-popup .inquiry-subtitle {
+  text-align: center;
+  color: var(--gray-dark);
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inquiry-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inquiry-field label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.inquiry-field label span {
+  color: #e74c3c;
+}
+
+.inquiry-field input,
+.inquiry-field select {
+  padding: 12px 14px;
+  border: 1px solid var(--gray);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  transition: border-color var(--transition-fast);
+}
+
+.inquiry-field input:focus,
+.inquiry-field select:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.inquiry-submit {
+  width: 100%;
+  padding: 14px;
+  margin-top: 5px;
+  background-color: var(--gold);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+}
+
+.inquiry-submit:hover {
+  background-color: var(--gold-dark);
+  box-shadow: var(--shadow-gold);
+}
+
+.inquiry-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .inquiry-popup {
+    padding: 25px 20px;
+  }
+}
