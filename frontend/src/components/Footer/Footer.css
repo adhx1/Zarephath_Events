@@ -104,6 +104,15 @@
 .footer-bottom span {
   color: var(--gold);
 }
+.footer-map-link {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-map-link:hover {
+  text-decoration: underline;
+}
 
 /* Responsive */
 @media (max-width: 900px) {

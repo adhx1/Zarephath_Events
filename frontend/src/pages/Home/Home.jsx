@@ -6,6 +6,7 @@ import api from '../../services/axios';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
+import HeroStats from '../../components/HeroStats/HeroStats';
 import './Home.css';
 
 const fallbackImages = [
@@ -121,6 +122,9 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Hero Stats */}
+      <HeroStats />
 
       {/* Services Preview */}
       <section className="page-section home-services">
