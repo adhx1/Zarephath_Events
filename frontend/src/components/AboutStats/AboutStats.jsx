@@ -27,19 +27,19 @@ const StatCounter = ({ value, suffix }) => {
 const AboutStats = () => {
   const stats = [
     {
-      value: 500,
+      value: 250,
       suffix: '+',
       title: 'Successful Events',
       description: 'Successfully planned and managed memorable events of all sizes.'
     },
     {
-      value: 15,
+      value: 33,
       suffix: '+',
       title: 'Years of Excellence',
       description: 'Delivering quality service and exceptional experiences over the years.'
     },
     {
-      value: 300,
+      value: 25000,
       suffix: '+',
       title: 'Satisfied Clients',
       description: 'Building long-term relationships through trust and professionalism.'
